@@ -23,7 +23,7 @@ class BookController extends Controller
             'released_at' => $request['released_at'],
         ]);
 
-        return redirect('/books/' . $book->id);
+        return redirect('/books' . $book->id);
     }
 
     public function show($id) {
@@ -44,6 +44,6 @@ class BookController extends Controller
             'released_at' => $request['released_at'],
         ]);
 
-        return redirect('/books/' . $book->id);
+        return redirect('/books' . $book->id);
     }
 }
