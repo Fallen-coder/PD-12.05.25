@@ -46,4 +46,9 @@ class BookController extends Controller
 
         return redirect('/books');
     }
+    public function destroy($id) {
+        $book = Book::find($id);
+        $book->delete();
+        return redirect('/books');
+    }
 }
